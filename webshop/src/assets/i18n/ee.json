@@ -1,0 +1,40 @@
+{
+    "navbar": {
+        "admin": "Admin vaatesse",
+        "about": "Meist",
+        "cart": "Ostukorvi"
+        
+    },
+    "home": {
+        "add-cart-button": "Lisa ostukorvi"
+    },
+    "admin-home": {
+        "add-product": "Lisa toode",
+        "maintain-products": "Halda tooteid",
+        "maintain-categories": "Halda kategooriaid",
+        "page-settings": "Halda lehe seadeid"
+    },
+    "page-settings": {
+        "phonenumber": "Telefoninumber",
+        "address": "Aadress"  
+    },
+    "buttons": {
+        "add": "Sisesta",
+        "add-new-product": "Sisesta uus toode",
+        "change": "Muuda",
+        "delete": "Kustuta"
+    },
+    "toast": {
+        "deleted": "Edukalt kustutatud",
+        "added-to-cart": "Toode edukalt ostukorvi lisatud"
+    },
+    "add-product": {
+        "product-id": "Toote id",
+        "product-name": "Toote nimi",
+        "product-category": "Toote kategooria",
+        "product-price": "Product price",
+        "product-image": "Toote pilt",
+        "product-description": "Toote kirjeldus",
+        "product-activity": "Toote aktiivsus"
+    }
+}

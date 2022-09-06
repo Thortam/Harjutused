@@ -1,0 +1,18 @@
+.kodu {
+  font-weight: bold;
+  font-size: x-large;
+  font-style: italic; 
+  border-radius: 8px; 
+}
+
+.kodu {
+    background-color: rgb(190, 210, 150);
+    border-style: groove;
+
+}
+
+.pilt {
+    width: 500px;
+}
+
+

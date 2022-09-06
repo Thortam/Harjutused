@@ -1,0 +1,17 @@
+<div *ngFor="let product of products">
+    <span>{{ product.id }}</span> <br>
+    <img src="{{ product.image }}" alt=""> <br>
+    <span>{{ product.name }}</span> <br>
+    <span>{{ product.price }} €</span> <br>
+    <span>{{ product.description }}</span> <br>
+    <span>{{ product.category }}</span> <br>
+    <div>{{ product.active }}</div> <br>
+    <button routerLink="/admin/muuda-toode/ {{product.id}}">{{ "buttons.change" | translate }}</button>
+    <button (click)="deleteProduct(product)">{{ "buttons.delete" | translate }}</button>
+</div>
+
+
+<lib-toastify-toast-container
+[position]="'bottom-right'"
+[autoClose]="3000"
+></lib-toastify-toast-container>

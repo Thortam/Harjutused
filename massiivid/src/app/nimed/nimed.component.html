@@ -1,0 +1,35 @@
+<!-- ngModel asja saab teha ainult input sisse
+paremal pool peab olema muutuja .ts failist
+tuleb importida FormsModule selle kasutamise jaoks -->
+<input (change)="otsi()" placeholder="Otsi" [(ngModel)]="otsitavNimi" type="text">
+
+
+<button (click)="shiftFunktsioon()">Kustuta algusest 1 ära</button>
+<button (click)="unshiftFunktsioon()">Lisa algusesse 1 juurde</button>
+<button (click)="spliceFunktsioon()">Kustuta alates 5-ndast ära</button>
+<button (click)="kustutaAlgusest()">Kustuta kindlal numbril 1 ära</button>
+<button (click)="tyhjenda()">Tühjenda</button>
+<button (click)="filterFunktsioon()">Filtreeri</button>
+<button (click)="filterFunktsioon2()">Filtreeri kõik "S" tähelised</button>
+<button (click)="mapFunktsioon()">Muuda igaüht</button>
+<button (click)="mapFunktsioon2()">Muuda näitamaks kolmandat tähte</button>
+<button (click)="sorteeri()">Sorteeri</button>
+<button (click)="sorteeri2()">Sorteeri tagurpidi</button>
+<button (click)="sorteeri3()">Sorteeri tähtede järjekorras</button>
+<button (click)="leia()">Leia</button>
+<button (click)="arvutaSumma()">Arvuta kõikide summa</button>
+
+<div>Kõigi tähtede kogusumma: {{summa}}</div>
+<div>Klikitud nime järjekorranumber: {{j2rjekorranumber}}</div>
+<div>Klikitud nime: {{leitud}}</div>
+
+<div>Nimesid on {{nimed.length}} tk</div>
+
+<div *ngFor="let nimi of nimed">
+    {{nimi}} 
+    <button (click)="kustuta(nimi)">x</button>
+    <button (click)="indexOfFunktsioon(nimi)">index</button>
+</div>
+
+<button (click)="popFunktsioon()">Kustuta lõpust 1 ära</button>
+<button (click)="pushFunktsioon()">Lisa lõppu 1 juurde</button>

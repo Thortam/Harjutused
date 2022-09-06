@@ -1,0 +1,12 @@
+<div *ngFor="let cartProduct of cartProducts">
+    <img src="{{ cartProduct.product.image }}" alt="">
+    <div>{{ cartProduct.product.name  }}</div>
+    <div>{{ cartProduct.product.price }} €</div>
+    <button (click)="decreaseQuantity(cartProduct)">-</button>
+    <div>{{ cartProduct.quantity }} tk</div>
+    <button (click)="increaseQuantity(cartProduct)">+</button>
+    <div>Toote hind kokku: {{ (cartProduct.product.price * cartProduct.quantity).toFixed(2) }} €</div>
+    <button (click)="removeFromCart(cartProduct)">Eemalda</button>
+</div>
+<p></p>
+<div>Ostukorv kokku: {{ cartSum.toFixed(2) }} €</div>

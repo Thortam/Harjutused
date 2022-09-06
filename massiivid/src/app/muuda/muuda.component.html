@@ -1,0 +1,23 @@
+<!-- a-form ja võtan ngForm
+siis kustutan parempoolse ja võtan jälle a-form ning võtan formGroup
+1. funktsioon .ts faili
+2. ReactivFormsModule import app.module.ts sisse
+3. form asemel peab olema muutuja .ts failis millele tehti = new FormGroup() -->
+
+<form (ngSubmit)="onSubmit()" [formGroup]="editForm">
+    <input formControlName="id" type="text">
+    <input formControlName="name" type="text">
+    <input formControlName="username" type="text">
+    <input formControlName="email" type="text">
+    <input formControlName="street" type="text">
+    <input formControlName="suite" type="text">
+    <input formControlName="city" type="text">
+    <input formControlName="zipcode" type="text">
+    <input formControlName="lat" type="text">
+    <input formControlName="lng" type="text">
+    <input formControlName="phone" type="text">
+    <input formControlName="website" type="text">
+    <input formControlName="companyName" type="text">
+    <input formControlName="catchPhrase" type="text">
+    <input formControlName="bs" type="text">
+</form>

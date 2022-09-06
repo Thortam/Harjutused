@@ -1,0 +1,39 @@
+{
+    "navbar": {
+        "admin": "To admin view",
+        "about": "About us",
+        "cart": "Cart"
+    },
+    "home": {
+        "add-cart-button": "Add to cart"
+    },
+    "admin-home": {
+        "add-product": "Add product",
+        "maintain-products": "Maintain products",
+        "maintain-categories": "Maintain categories",
+        "page-settings": "Maintain page settings"
+    },
+    "page-settings": {
+        "phonenumber": "Phonenumber",
+        "address": "Address"
+    },
+    "buttons": {
+        "add": "Add",
+        "add-new-product": "Add new product",
+        "change": "Change",
+        "delete": "Delete"
+    },
+    "toast": {
+        "deleted": "Successfully deleted",
+        "added-to-cart": "Successfully product added to cart"
+    },
+    "add-product": {
+        "product-id": "Product id",
+        "product-name": "Product name",
+        "product-category": "Product category",
+        "product-price": "Product price",
+        "product-image": "Product image",
+        "product-description": "Product description",
+        "product-activity": "Product activity"
+    }
+}

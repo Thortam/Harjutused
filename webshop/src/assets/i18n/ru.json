@@ -1,0 +1,40 @@
+{
+    "navbar": {
+        "admin": "Для просмотра администратором",
+        "about": "O нас",
+        "cart": "Корзина"
+        
+    },
+    "home": {
+        "add-cart-button": "Добавить в корзину"
+    },
+    "admin-home": {
+        "add-product": "Добавить продукт",
+        "maintain-products": "Поддерживать продукты",
+        "maintain-categories": "Поддерживать категории",
+        "page-settings": "Сохранить настройки страницы"
+    },
+    "page-settings": {
+        "phonenumber": "Номер телефона",
+        "address": "Адрес"  
+    },
+    "buttons": {
+        "add": "Добавлять",
+        "add-new-product": "Добавить новый продукт",
+        "change": "Изменять",
+        "delete": "Удалить"
+    },
+    "toast": {
+        "deleted": "Успешно удалено",
+        "added-to-cart": "Товар успешно добавлен в корзину"
+    },
+    "add-product": {
+        "product-id": "Код товара",
+        "product-name": "Наименование товара",
+        "product-category": "Категория продукта",
+        "product-price": "Цена продукта",
+        "product-image": "Изображение продукта",
+        "product-description": "Описание продукта",
+        "product-activity": "Продуктовая активность"
+    }
+}

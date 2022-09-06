@@ -1,0 +1,10 @@
+<div>Meie töötajad:</div>
+
+<br>
+
+<div>Ott Tänak - kuller <button (click)="n2itaKontaktAndmeid('OTI KONTAKTANDMED')">Võta ühendust</button></div>
+<div>Kerttu Jukkum - lilleseadja <button (click)="n2itaKontaktAndmeid('E-MAIL: ASDASDASD')">Võta ühendust</button></div>
+<div>Gustav Adolf - reklaaminägu <button (click)="n2itaKontaktAndmeid('TELEFON: 55555555')">Võta ühendust</button></div>
+<div>Peeter Võsa - vaidluse osakond <button (click)="n2itaKontaktAndmeid('HETKEL PUUDUB, AGA VÕTA ÜLDTELEFONI KAUDU ÜHENDUST')">Võta ühendust</button></div>
+
+<div *ngIf="kontaktAndmed !== ''">Tema kontaktandmed: {{ kontaktAndmed }}</div>

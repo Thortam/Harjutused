@@ -1,0 +1,10 @@
+<form (ngSubmit)="addSettings(contactSettingsForm)" [formGroup]="contactSettingsForm">
+    <label>{{"page-settings.phonenumber" | translate}}</label> <br>
+    <input formControlName="telephone" type="text"> <br>
+    <label>{{"page-settings.address" | translate}}</label> <br>
+    <input formControlName="address" type="text"> <br>
+    <button>{{"buttons.add" | translate}}</button>
+</form>
+
+
+<!-- kandilised sulud HTMLis tähistavad, et vasakult poolt võetakse väärtus vastu -->

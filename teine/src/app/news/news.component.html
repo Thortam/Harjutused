@@ -1,0 +1,22 @@
+<div>Leht on inglise keeles! Vaheta keelt alumise nupu kaudu.</div>
+<h2>
+    {{ uudis }} 
+    <span 
+    (mouseenter)="hiiregaYleMinnes()"
+    (mouseleave)="hiirega2raMinnes()"
+    *ngIf="onIngliseKeelne" class="punane-tarn">*</span> 
+</h2>
+
+<div>
+    {{ uudiseSisu }} 
+    <span 
+    (mouseenter)="hiiregaYleMinnes()"
+    (mouseleave)="hiirega2raMinnes()"
+    *ngIf="onIngliseKeelne" class="punane-tarn">*</span> 
+</div>
+
+<button (click)="muudaIngliseKeelseks()">Inglise keelne</button>
+<button (click)="muudaMuukeelseks()">Muu keelne</button>
+<button (click)="muudaTagasi()">Algusesse</button>
+
+<img src="" alt="">

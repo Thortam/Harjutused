@@ -1,0 +1,27 @@
+<!-- router+outlet sisse lähevad kõik seosed app+routing seest,
+router-outlet on lehekülje sisu -->
+
+
+<!-- MENÜÜ - igal lehel -->
+<nav class="navbar navbar-expand-lg bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" routerLink="/">Webshop</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-link" routerLink="admin">{{ "navbar.admin" | translate }}</a>
+        <a class="nav-link" routerLink="meist">{{ "navbar.about" | translate }}</a>
+        <a class="nav-link" routerLink="ostukorv">{{ "navbar.cart" | translate }}</a>
+        <a class="nav-link" routerLink="poed">Meie poed kaardil</a>
+      </div>
+    </div>
+    <img class="lang" (click)="useLanguage('en')" src="assets/united-kingdom.png" />
+    <img class="lang" (click)="useLanguage('ee')" src="assets/estonia.png" />
+    <img class="lang" (click)="useLanguage('ru')" src="assets/russia.png" />
+  
+  </div>
+</nav>
+<router-outlet></router-outlet>
+<!-- FOOTER - igal lehel -->

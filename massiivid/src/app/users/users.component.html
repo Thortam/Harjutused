@@ -1,0 +1,56 @@
+<input (change)="otsi()" placeholder="Search" [(ngModel)]="otsitavNimi" type="text">
+
+<button (click)="filtreeri()">Filtreeri</button>
+<button (click)="filtreeri2()">Filtreeri lat</button>
+<button (click)="sorteeri()">Sorteeri</button>
+<button (click)="sorteeri2()">Sorteeri tel nr</button>
+<button (click)="spliceFunktsioon()">Kustuta alates 3-ndast ära</button>
+<button (click)="kustutaAlgusest()">Kustuta kindlal numbril 1 ära</button>
+<button (click)="tyhjenda()">Tühjenda</button>
+<button (click)="leia()">Leia</button>
+<button (click)="arvutaSumma()">Arvuta telefoni numbrite summa</button>
+<button (click)="mapFunktsioon()">Muuda</button>
+<button (click)="mapFunktsioon2()">Muuda vanust</button>
+
+<br><br>
+
+<button
+    [class.bold]="viimatiKlikitudTelNumAlgus === algus"
+    *ngFor="let algus of telefoniNumbriAlgus" 
+    (click)="filtreeriTelAlgus(algus)">
+    {{ algus }}
+</button>
+
+<br><br>
+<p>
+    <div>Kõigi tähtede kogusumma kasutajanimes: {{summa}}</div>
+    <div>Klikitud kasutaja järjekorranumber: {{j2rjekorranumber}}</div>
+    <div *ngIf="leitud">Klikitud kaustaja email on: {{leitud.email}}</div>
+
+    <div>Kasutajaid on {{users.length}} tk</div>
+
+<p>
+<div *ngFor="let user of users">
+    <div>{{user.id}}</div>
+    <div>{{user.name}}</div>
+    <div>{{user.username}}</div>
+    <div>{{user.age}}</div>
+    <div>{{user.email}}</div>
+    <div>{{user.address.street}}</div>
+    <div>{{user.address.suite}}</div>
+    <div>{{user.address.city}}</div>
+    <div>{{user.address.zipcode}}</div>
+    <div>{{user.address.geo.lat}}</div>
+    <div>{{user.address.geo.lng}}</div>
+    <div>{{user.phone}}</div>
+    <div>{{user.website}}</div>
+    <div>{{user.company.name}}</div>
+    <div>{{user.company.catchPhrase}}</div>
+    <div>{{user.company.bs}}</div>
+    <button (click)="kustuta(user)">x</button>
+    <button (click)="indexOfFunktsioon(user)">index</button> <p>
+    <button routerLink="/user/{{user.id}}">Detailselt</button>
+</div>
+
+<button (click)="popFunktsioon()">Kustuta lõpust 1 ära</button>
+

@@ -1,0 +1,43 @@
+<!-- 1. Kõik kategooriad nuppudega -->
+<div 
+[class.active-category]="activeCategory === ''"
+(click)="filterByCategory('')">Kõik kategooriad</div>
+<div
+ *ngFor="let category of categories" 
+ (click)="filterByCategory(category)"
+ [class.active-category]="category === activeCategory">
+ {{ category }}
+</div>
+
+<!-- 2. 4 sorteerimisnuppu -->
+<div class="btn-group">
+    <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sorteeri</button>
+    <div class="dropdown-menu">
+        <!-- ?????????? -->
+    </div>
+    <button class="btn btn-primary btn-sm" (click)="sortAZ()">Sorteeri A-Z</button>
+    <button class="btn btn-primary btn-sm" (click)="sortZA()">Sorteeri Z-A</button>
+    <button class="btn btn-primary btn-sm" (click)="sortPriceAsc()">Sorteeri hind kasvavalt</button>
+    <button class="btn btn-primary btn-sm" (click)="sortPriceDesc()">Sorteeri hind kahanevalt</button>
+</div>
+
+
+
+
+<div *ngFor="let product of products">
+    <span>{{ product.id }}</span> <br>
+    <span>{{ product.name }}</span> <br>
+    <img src="{{ product.image }}" alt=""> <br>
+    <span>{{ product.price }} €</span> <br>
+    <span>{{ product.description }}</span> <br>
+    <span>{{ product.category }}</span> <br>
+    <div>{{ product.active }}</div> <br>
+    <button (click)="addToCart(product)">{{"home.add-cart-button" | translate}}</button>
+</div>
+
+<lib-toastify-toast-container
+[position]="'bottom-right'"
+[autoClose]="3000"
+></lib-toastify-toast-container>
+
+
